@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home|DEV</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+  <div id="main-wrapper" class="fancy-scrollbar">
+    <div id="main">
+      <div id="content">
+        <div id="links-container"  style="padding-left: 30%; padding-right: 30%;">
+          <a href="https://lms.bennett.edu.in/my/">LMS</a>
+          <a href="https://www.udemy.com/">Udemy</a>
+          <a href="https://bennett.codetantra.com/login.jsp">CodeTantra</a>
+          <a href="#">About</a>
+        </div>
+      <div class="mycontainer" style="padding-left: 30%; padding-right: 30%; padding-top: 1%;">
+        <div id="header-container">
+          <div class='parent'>
+            <div class='child'><main>
+              <div class="atom">
+                  <div class="electron"></div>
+                  <div class="electron-alpha"></div>
+                  <div class="electron-omega"></div>
+              </div>
+          </main></div>
+            <div class='child'>  <button type="button" id="user-menu-button" style="margin: 10%;">
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="social-buttons">
+  
+            <a href="https://www.instagram.com/deepanshu.garg_27/" target="_blank" class="social-button social-button--instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            
+            <a href="https://github.com/deepanshug1" target="_blank" class="social-button social-button--github" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+
+            </a>
+            <a href="https://www.linkedin.com/in/deepanshugarg27/" target="_blank" class="social-button social-button--linkedin" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        
+        <div id="search-container" style="margin-top: 5%;">
+          <div id="search-input-container">
+            <img src="https://assets.codepen.io/1468070/Google+G+Icon.png" alt="" />
+            <input type="text" placeholder="Search anything" id="search" />
+          </div>
+
+          <button id="image-button" onclick="googleSearch();" type="button">
+            <i class="fa-regular fa-search"></i>
+          </button>
+
+          <button id="mic-button" type="button">
+            <i class="fa-regular fa-microphone"></i>
+          </button>
+          </div>
+
+        <div id="apps-container">
+          
+          <a href="https://youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            <div class="label">
+              <span class="name">YouTube</span>
+              <span class="url">youtube.com</span>
+            </div>
+          </a>
+          
+          <a href="https://spotify.com" target="_blank">
+            <i class="fa-brands fa-spotify"></i>
+            <div class="label">
+              <span class="name">Spotify</span>
+              <span class="url">spotify.com</span>
+            </div>
+          </a>
+          <a href="https://leetcode.com/problemset/all/" target="_blank">
+            <i class="fa fa-code"></i>
+            <div class="label">
+              <span class="name">Leetcode</span>
+              <span class="url">Leetcode.com</span>
+            </div>
+          </a>
+         
+          <a href="https://chat.openai.com" target="_blank">
+            <i class="fa fa-gg" ></i>
+            <div class="label">
+              <span class="name">Chat GPT</span>
+              <span class="url">chat.openai.com</span>
+            </div>
+          </a>
+        
+          <a href="https://outlook.office.com/mail/" target="_blank">
+            <i class="fa fa-envelope" ></i></i>
+            <div class="label">
+              <span class="name">Outlook</span>
+              <span class="url">Outlook.com</span>
+            </div>
+          </a>
+
+          
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+            <div class="label">
+              <span class="name">Whatsapp</span>
+              <span class="url">whatsapp.com</span>
+            </div>
+          </a>
+        </div>
+     
+
+      </div>
+  
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script>
+    function googleSearch()
+    {
+        var text=document.getElementById("search").value;
+        var cleanQuery = text.replace(" ","+",text);
+        var url='http://www.google.com/search?q='+cleanQuery;
+    
+        window.location.href=url;
+    }
+    </script>
+  <script src='https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js'></script>
+
+</body>
+
+
+</html>
